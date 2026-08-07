@@ -1,3 +1,5 @@
+<?php snippet('feature/gatekeeper') ?>
+
 <?php snippet('site-header') ?>
 <div class="wrapper">
   <?php snippet('layout/container/header') ?>

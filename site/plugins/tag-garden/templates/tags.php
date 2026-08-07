@@ -1,3 +1,5 @@
+<?php snippet('feature/gatekeeper') ?>
+
 <?php
 /**
  * Tags Index Template

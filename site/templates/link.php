@@ -1,3 +1,5 @@
+<?php snippet('feature/gatekeeper') ?>
+
 <?php snippet('site-header') ?>
   <?php
       // Get the link number

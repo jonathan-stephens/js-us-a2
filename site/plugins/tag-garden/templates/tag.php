@@ -1,3 +1,5 @@
+<?php snippet('feature/gatekeeper') ?>
+
 <?php
 /**
  * Single Tag Template - Unified Timeline

@@ -1,0 +1,84 @@
+title: Subscriber
+
+permissions:
+  access:
+    panel: false
+  user:
+    changeEmail: true
+    changeName: true
+    changePassword: true
+    delete: false
+    changeRole: false
+  pages: false
+  site: false
+  files: false
+  users: false
+
+columns:
+  main: 
+    width: 2/3
+    sections:
+      about:
+        label: About
+        icon: text
+        type: fields
+        fields:
+          bio:
+            label: Who they are
+            type: textarea              
+            width: 1/2
+            size: medium
+          met:
+            label: How we met
+            type: textarea              
+            width: 1/2
+            size: medium
+          contact_methods:
+            type: structure
+            columns:
+              type: 
+                width: 1/4
+              value:
+                width: 1/2
+              preference:
+                width: 1/4
+            fields:
+              type:
+                label: Type
+                type: select
+                required: true
+                options:
+                  email: Email
+                  phone: Phone / Mobile
+                  address: Physical Address
+              value:
+                label: Contact Detail
+                type: text
+                required: true
+                placeholder: e.g., hello@example.com or +1 555-0199
+              preference:
+                label: Preference / Instructions
+                type: text
+                placeholder: e.g., "Best for quick questions", "Text only", "Write me"              
+  sidebar:
+    width: 1/3
+    sections:
+      socials:
+        type: fields
+        fields:
+          web_places:
+            type: structure
+            columns:
+              type: 
+                width: 1/4
+              value:
+                width: 1/2
+            fields:
+              place:
+                label: Place
+                type: text
+                required: true
+              address:
+                label: URL
+                type: url
+                required: true
